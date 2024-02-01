@@ -1,0 +1,156 @@
+<blogSection>
+    <div class="blog-section">
+      <div class="inner-container">
+        <div class="header">
+          <h2>From the blog</h2>
+          <p>Learn how to grow your business with our expert advice.</p>
+        </div>
+        <div class="grid-container">
+          <article class="article-container">
+            <div class="metadata">
+              <time datetime="2020-03-16">Mar 16, 2020</time>
+              <a href="#" class="category">Marketing</a>
+            </div>
+            <div class="content">
+              <h3>
+                <a href="#">Boost your conversion rate</a>
+              </h3>
+              <p class="excerpt">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+            </div>
+            <div class="author-info">
+              <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Author Image" class="author-image">
+              <div class="author-details">
+                <p class="author-name">
+                  <a href="#">Michael Foster</a>
+                </p>
+                <p class="author-role">Co-Founder / CTO</p>
+              </div>
+            </div>
+          </article>
+          <!-- More articles... -->
+        </div>
+      </div>
+    </div>
+  </blogSection>
+  
+
+<style>
+    /* Assuming a general structure for the blog section */
+blogSection {
+  background-color: #ffffff;
+  padding-top: 6rem; /* You may need to adjust the exact value based on your design */
+  padding-bottom: 8rem; /* You may need to adjust the exact value based on your design */
+}
+
+/* Styles for the inner container */
+blogSection > div {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 64rem; /* 7xl in Tailwind CSS */
+  padding-left: 1.5rem; /* 6 in Tailwind CSS */
+  padding-right: 2rem; /* 8 in Tailwind CSS */
+}
+
+/* Styles for the text inside the container */
+blogSection h2 {
+  font-size: 1.875rem; /* 3xl in Tailwind CSS */
+  font-weight: bold;
+  letter-spacing: -0.0125em; /* tracking-tight in Tailwind CSS */
+  color: #1a202c; /* text-gray-900 in Tailwind CSS */
+}
+
+blogSection p {
+  margin-top: 0.5rem; /* mt-2 in Tailwind CSS */
+  font-size: 1.125rem; /* text-lg in Tailwind CSS */
+  line-height: 1.5;
+  color: #4a5568; /* text-gray-600 in Tailwind CSS */
+}
+
+/* Styles for the grid */
+blogSection .grid {
+  margin-top: 2.5rem; /* mt-10 in Tailwind CSS */
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem 1rem; /* gap-x-8 gap-y-16 in Tailwind CSS */
+  border-top: 1px solid #e2e8f0; /* border-t border-gray-200 in Tailwind CSS */
+  padding-top: 2.5rem; /* pt-10 in Tailwind CSS */
+}
+
+/* Styles for individual articles in the grid */
+blogSection article {
+  display: flex;
+  flex-direction: column;
+  max-width: 32rem; /* max-w-xl in Tailwind CSS */
+  justify-content: space-between;
+}
+
+blogSection article div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* gap-x-4 in Tailwind CSS */
+  font-size: 0.75rem; /* text-xs in Tailwind CSS */
+  color: #718096; /* text-gray-500 in Tailwind CSS */
+}
+
+blogSection article time {
+  font-weight: bold;
+}
+
+blogSection article a {
+  position: relative;
+  z-index: 10;
+  border-radius: 9999px; /* rounded-full in Tailwind CSS */
+  background-color: #f7fafc; /* bg-gray-50 in Tailwind CSS */
+  padding: 0.375rem 0.75rem; /* px-3 py-1.5 in Tailwind CSS */
+  font-weight: medium;
+  color: #4a5568; /* text-gray-600 in Tailwind CSS */
+  transition: background-color 0.2s ease-in-out;
+}
+
+blogSection article a:hover {
+  background-color: #edf2f7; /* hover:bg-gray-100 in Tailwind CSS */
+}
+
+blogSection article div:nth-child(2) {
+  position: relative;
+  margin-top: 1.875rem; /* mt-3 in Tailwind CSS */
+}
+
+blogSection article h3 {
+  font-size: 1.125rem; /* text-lg in Tailwind CSS */
+  font-weight: bold;
+  line-height: 1.5;
+  color: #2d3748; /* text-gray-900 in Tailwind CSS */
+}
+
+blogSection article p {
+  margin-top: 1.25rem; /* mt-5 in Tailwind CSS */
+  font-size: 0.875rem; /* text-sm in Tailwind CSS */
+  line-height: 1.5;
+  color: #4a5568; /* text-gray-600 in Tailwind CSS */
+}
+
+blogSection article img {
+  height: 2.5rem; /* h-10 in Tailwind CSS */
+  width: 2.5rem; /* w-10 in Tailwind CSS */
+  border-radius: 50%; /* rounded-full in Tailwind CSS */
+  background-color: #f7fafc; /* bg-gray-50 in Tailwind CSS */
+}
+
+blogSection article div:last-child {
+  margin-top: 2rem; /* mt-8 in Tailwind CSS */
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* gap-x-4 in Tailwind CSS */
+  font-size: 0.875rem; /* text-sm in Tailwind CSS */
+  line-height: 1.5;
+  color: #4a5568; /* text-gray-600 in Tailwind CSS */
+}
+
+blogSection article div:last-child a {
+  font-weight: bold;
+  color: #2d3748; /* text-gray-900 in Tailwind CSS */
+}
+
+/* Additional styling for other elements can be added here */
+
+</style>
