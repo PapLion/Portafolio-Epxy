@@ -1,0 +1,172 @@
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+/* Colores */
+:root {
+  --background: #16221f;
+  --secondary: #bdeadb;
+  --primary: #cdeadc;
+  --text: #000000;
+  --accent: #edeade;
+}
+
+/* Añade estilos específicos para todo */
+*{
+  list-style: none;
+  text-decoration: none;
+  color: var(--text);
+}
+
+body{
+  background-color: var(--background);
+}
+
+/* Añade estilos específicos para el header*/
+header{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1rem; /* Tamaño del logo más pequeño */
+    color: var(--text);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 1px; /* Reducción del margen derecho */
+    transition: transform 0.3s ease, color 0.3s ease; /* Efecto de transformación y cambio de color al hacer hover */
+  }
+  
+  
+  /* Efecto de logo al hacer hover */
+  .logo:hover {
+    transform: scale(1.1); /* Escalado al hacer hover para un efecto más suave */
+    color: var(--secondary); /* Cambio de color al hacer hover */
+  }
+  
+  
+  ul{
+    display: flex;
+  }
+  
+  header ul li a {
+    color: var(--background);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  header ul li a:hover {
+    color: var(--primary);
+    background-color: var(--background);
+  }
+
+  /* Estilos específicos para el body en el nuevo estilo */
+#About, #Conocimientos {
+    background-color: #F7F7F7; /* Cambia el color de fondo */
+    padding: 50px;
+    text-align: left; /* Alineación del texto */
+  }
+  
+  #Proyectos a {
+    color: #3498DB; /* Color de enlace */
+    text-decoration: none; /* Quita el subrayado */
+    transition: color 0.3s ease; /* Transición de color al hacer hover */
+  }
+  
+  #Proyectos a:hover {
+    color: #E74C3C; /* Cambia el color al hacer hover */
+  }
+  
+  #Tecnologias h4 {
+    background-color: #3498DB;
+    color: #FFFFFF;
+    padding: 10px; /* Aumenta el relleno */
+    border-radius: 5px;
+    margin-bottom: 20px; /* Ajusta el margen inferior */
+  }
+  
+  #Home {
+    background-image: url('nueva-ruta-de-tu-imagen.jpg'); /* Cambia la ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: left; /* Alineación del texto */
+    padding: 80px 20px; /* Ajusta el relleno según sea necesario */
+  }
+  
+  #Home h1 {
+    font-size: 4rem; /* Tamaño del título */
+    margin-bottom: 30px; /* Ajusta el margen inferior */
+  }
+  
+  #Home p {
+    font-size: 1.8rem; /* Tamaño del párrafo */
+    margin-bottom: 50px; /* Ajusta el margen inferior */
+  }
+  
+  #Home a {
+    display: inline-block;
+    background-color: #E74C3C;
+    color: #FFFFFF;
+    padding: 20px 40px; /* Ajusta el relleno */
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.5rem; /* Tamaño del texto */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #Home a:hover {
+    background-color: #3498DB; /* Cambia el color al hacer hover */
+  }
+  
+  #Tecnologias .tecnologia a {
+    color: #3498DB;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #Tecnologias .tecnologia a:hover {
+    color: #E74C3C;
+  }
+  
+  #About {
+    background-color: #F7F7F7;
+    padding: 80px 20px; /* Ajusta el relleno según sea necesario */
+    color: #333333; /* Cambia el color del texto */
+  }
+  
+  #About h1 {
+    font-size: 3.5rem; /* Tamaño del título */
+    margin-bottom: 30px;
+  }
+  
+  #About p {
+    font-size: 1.5rem; /* Tamaño del párrafo */
+    line-height: 1.8;
+  }
+  
+  #About div {
+    max-width: 1000px; /* Ajusta el ancho máximo */
+    margin: 0 auto;
+  }
+  
+  #About img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 40px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  }
