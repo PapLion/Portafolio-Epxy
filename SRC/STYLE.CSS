@@ -148,31 +148,31 @@ section {
 }
 
 #Conocimientos .icon-div {
-  text-align: center; /* Centra el texto en la sección */
-  display: flex; /* Cambiado a flex para que los iconos y listas se muestren en línea */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
 }
 
 .icon-div {
-  text-align: center; /* Centra el contenido en el div */
-  margin: 10px; /* Añadido un margen para separar los divs */
+  text-align: center;
+  margin: 10px;
 }
 
 .skills-ul {
   list-style: none;
   padding: 0;
-  text-align: left; /* Alinea el texto a la izquierda en la lista */
+  text-align: left;
 }
 
 .skills-ul li {
-  border: 1px solid #ccc; /* Bordes para los elementos de la lista */
+  border: 1px solid #ccc;
   padding: 10px;
   margin: 5px;
 }
 
 .skills-ul li:hover {
-  background-color: #f0f0f0; /* Cambio de color al hacer hover */
+  background-color: #f0f0f0;
 }
 
 /*Conocimientos*/
@@ -182,33 +182,32 @@ section {
 }
 
 #Conocimientos {
-  text-align: center; /* Centra el texto en la sección */
+  text-align: center;
 }
 
 .icon-div {
-  display: grid; /* Cambiado a grid para una disposición en cuadrícula */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas autoajustables */
-  gap: 20px; /* Espacio entre las columnas */
-  justify-content: center; /* Centra los elementos horizontalmente */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px; 
+  justify-content: center;
 }
 
 .skills-ul {
   list-style: none;
   padding: 0;
-  text-align: left; /* Alinea el texto a la izquierda en la lista */
+  text-align: left;
 }
 
 .skills-ul li {
-  border: 1px solid #ccc; /* Bordes para los elementos de la lista */
+  border: 1px solid #ccc;
   padding: 10px;
   margin: 5px;
 }
 
 .skills-ul li:hover {
-  background-color: #f0f0f0; /* Cambio de color al hacer hover */
+  background-color: #f0f0f0;
 }
 
-/*Tecnologias*/
 /*Tecnologias*/
 #Tecnologias {
   padding: 50px;
@@ -221,26 +220,32 @@ section {
 }
 
 .tecnology-h4 {
-  background-color: var(--accent);
-  color: var(--background);
+  background-color: var(--secondary);
+  color: var(--text);
   padding: 5px;
   border-radius: 5px;
   margin-bottom: 10px;
   text-align: center;
 }
+
+.tecnology-h4-isa:hover{
+  background-color:var(--primary);
+  transition: all ease 0.1s;
+}
+
 .tecnologia {
   display: inline-block;
   width: 200px;
   margin-right: 20px;
   margin-bottom: 20px;
-  border: 2px solid var(--accent);
+  border: 2px solid var(--primary);
   border-radius: 10px;
   padding: 15px;
 }
 
 .tecnologia:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  cursor: pointer;
+  background-color: var(--secondary);
+  transition: all ease 0.3s;
 }
 
 .tecnologia h3,
@@ -273,45 +278,134 @@ section {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos específicos para el footer */
-footer {
+/*Proyectos*/
+#Proyectos {
+  padding: 50px;
+  color: var(--background);
+}
+
+.proyect-h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.proyect-a {
+  color: var(--accent);
+  text-decoration: underline;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.proyect-a:hover {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.proyecto {
+  background-color: var(--secondary);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.proyecto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.proyecto h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.proyecto p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.proyecto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30%;
+  background-color: var(--accent);
+  z-index: -1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.proyectos-extra {
+  display: none;
+}
+
+.proyectos-extra.show-more {
+  display: block;
+}
+
+.toggle-more {
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--accent);
+  color: var(--text);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+}
+
+.toggle-more:hover {
   background-color: var(--background);
   color: var(--text);
-  padding: 30px;
+}
+
+/* Estilos específicos para el footer */
+footer {
+  color: var(--text);
+  padding: 20px;
   text-align: center;
 }
 
 .about-section, .contact-section, .bottom-section {
-  margin-bottom: 30px;
-}
-
-.about-section p, .contact-section p, .bottom-section p {
-  font-size: 1.2rem; 
-  line-height: 1.6; 
-  margin-bottom: 15px;
-}
-
-.social-icons {
-  margin-top: 20px;
-}
-
-.fot-icons {
-  font-size: 2rem; 
-  margin-right: 15px;
-  color: var(--primary);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.fot-icons:hover {
-  color: var(--secondary);
-}
-
-.bottom-section p {
-  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 hr {
-  border: 1px solid;
-  margin: 20px 0;
+  border: 1px solid var(--text);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fot-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.fot-icons:hover {
+  background-color: var(--primary);
+}
+
+.fot-icons i {
+  font-size: 24px;
+  color: var(--text);
+}
+
+.bottom-section h3 {
+  margin-top: 20px;
 }

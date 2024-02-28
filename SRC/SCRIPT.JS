@@ -1,20 +1,14 @@
-//Hacer los temas
 const themeSwitch = document.querySelector('.theme-switch');
 
-// Escuchar el evento de clic en el interruptor de tema
 themeSwitch.addEventListener('click', toggleTheme);
 
-// Función para cambiar entre los temas
 function toggleTheme() {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     
-    // Cambiar al tema opuesto
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     
-    // Actualizar el atributo de tema en el elemento HTML
     document.documentElement.setAttribute('data-theme', newTheme);
 
-    // Cambiar el ícono de la luna y el sol
     const moonIcon = document.querySelector('.fa-moon');
     const sunIcon = document.querySelector('.fa-sun');
 
@@ -24,5 +18,19 @@ function toggleTheme() {
     } else {
         moonIcon.style.display = 'inline-block';
         sunIcon.style.display = 'none';
+    }
+}
+
+
+function toggleProyectos() {
+    const proyectosExtra = document.querySelector('.proyectos-extra');
+    proyectosExtra.classList.toggle('show-more');
+
+    const toggleMoreButton = document.querySelector('.toggle-more');
+    
+    if (proyectosExtra.classList.contains('show-more')) {
+        toggleMoreButton.textContent = 'Ver menos 👆';
+    } else {
+        toggleMoreButton.textContent = 'Ver más 👇';
     }
 }
