@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Pixelify%20Sans:700|Pixelify%20Sans:400');
+
+body {
+  font-family: 'Pixelify Sans';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Pixelify Sans';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+:root[data-theme="light"] {
+  --text: #40463f;
+  --background: #f0efef;
+  --primary: #f99090;
+  --secondary: #e2abab;
+  --accent: #fbefef;
+}
+:root[data-theme="dark"] {
+  --text: #bac0b9;
+  --background: #100f0f;
+  --primary: #6f0606;
+  --secondary: #541d1d;
+  --accent: #100404;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    color: var(--text);
+  }
+  
+  body{
+    background-color: var(--background);
+  }
+  
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Encabezado */
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1rem; /* Tamaño del logo más pequeño */
+    color: var(--text);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 1px; /* Reducción del margen derecho */
+    transition: transform 0.3s ease, color 0.3s ease; /* Efecto de transformación y cambio de color al hacer hover */
+  }
+  
+  
+  /* Efecto de logo al hacer hover */
+  .logo:hover {
+    transform: scale(1.1); /* Escalado al hacer hover para un efecto más suave */
+    color: var(--secondary); /* Cambio de color al hacer hover */
+  }
+  
+  
+  ul{
+    display: flex;
+  }
+  
+  header ul li a {
+    color:var(--text);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  header ul li a:hover {
+    color: white;
+    background-color: black;
+  }
+
+  .theme-switch {
+    cursor: pointer;
+    font-size: 1.5rem; /* Ajusta el tamaño del icono según tus preferencias */
+    transition: transform 0.3s ease, color 0.3s ease; /* Agrega transiciones para un efecto suave */
+  }
+  
+  .theme-switch:hover {
+    transform: scale(1.2); /* Escalado al hacer hover para un efecto más destacado */
+    color: var(--primary); /* Cambio de color al hacer hover */
+  }
+
+  
+/* Sección de contacto */
+.contact-section {
+    background-color: var(--accent);
+    color: var(--text);
+    padding: 50px;
+    text-align: center;
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    background-color: var(--accent);
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--text);
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    color: var(--text); /* Nuevo color para el texto de los inputs y textarea */
+  }
+  
+  button {
+    background-color: var(--secondary);
+    color: var(--text);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--primary);
+    color: var(--background);
+  }
+  
+/* Estilos específicos para el footer */
+footer {
+    background-color: var(--background); /* Fondo del footer */
+    color: var(--text);
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .about-section, .contact-section, .bottom-section {
+    margin-bottom: 30px;
+  }
+  
+  .about-section p, .contact-section p, .bottom-section p {
+    font-size: 1.2rem; /* Tamaño del texto en las secciones del footer */
+    line-height: 1.6; /* Altura de línea para una mejor legibilidad */
+    margin-bottom: 15px;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .fot-icons {
+    font-size: 2rem; /* Tamaño de los íconos sociales */
+    margin-right: 15px;
+    color: var(--primary); /* Color de los íconos sociales */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .fot-icons:hover {
+    color: var(--secondary); /* Cambio de color al hacer hover en los íconos sociales */
+  }
+  
+  .bottom-section p {
+    font-size: 1rem; /* Tamaño del texto en la sección inferior del footer */
+  }
+  
+  hr {
+    border: 1px solid; /* Línea divisoria con color */
+    margin: 20px 0;
+  }
+  
