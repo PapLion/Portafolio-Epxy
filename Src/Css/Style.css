@@ -1,0 +1,92 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Pixelify%20Sans:700|Pixelify%20Sans:400');
+
+body {
+  font-family: 'Pixelify Sans';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Pixelify Sans';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+i {font-size: 3rem;}
+
+/*Colors*/
+:root{
+  --text: #1971c2;
+--background: #e9ecef;
+--primary: #a5d8ff;
+--secondary: #ffec99;
+--accent: #2eb5ef;
+--bs-border-color:var(--text);
+}
+
+/*Styles*/
+body{
+  background-color: var(--background);
+}
+
+a, p, h1, h2, h3, h4, h5, h6, i{
+  color: var(--text);
+}
+
+main{
+  height: 100vh;
+}
+
+section{
+  height: 75%;
+}
+
+.items{
+  width:25%;
+  height: 125px;
+}
+
+.items-c{
+  width:200px;
+}
+
+.home{
+  background-color: var(--primary);
+}
+
+.home2{
+  background-color: #b2f2bb;
+}
+
+li{
+  background-color: var(--secondary);
+}
+
+a:hover{
+  background-color: var(--accent);
+}
+
+.texts-bg{
+  background-color: var(--background);
+}
+
+button{ 
+  height: 30px;
+}
+
+.btn-ext{
+  width: 145px;
+}
