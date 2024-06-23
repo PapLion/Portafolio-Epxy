@@ -40,6 +40,7 @@ i {font-size: 3rem;}
 /*Styles*/
 body{
   background-color: var(--background);
+  overflow: hidden;
 }
 
 a, p, h1, h2, h3, h4, h5, h6, i{
@@ -47,7 +48,7 @@ a, p, h1, h2, h3, h4, h5, h6, i{
 }
 
 main{
-  height: 100vh;
+  height: 90vh;
 }
 
 section{
@@ -55,8 +56,8 @@ section{
 }
 
 .items{
-  width:25%;
-  height: 125px;
+  width:150px;
+  height: 150px;
 }
 
 .items-c{
@@ -64,7 +65,7 @@ section{
 }
 
 .home{
-  background-color: var(--primary);
+  background-color: #b2f2bb;
 }
 
 .home2{
@@ -89,4 +90,8 @@ button{
 
 .btn-ext{
   width: 145px;
+}
+
+.logo{
+  font-size: 25px;
 }
